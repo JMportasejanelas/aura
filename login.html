@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="brand">
+        <div class="brand-logo">A</div>
+        <div class="brand-text">
+          <h1>AURA</h1>
+          <p>Entre e acompanhe seus treinos com estilo.</p>
+        </div>
+      </div>
+
+      <div class="subtitle" id="subtitle">Use seu email e senha para entrar, ou cadastre-se com nome de usuário.</div>
+
+      <div class="tabs">
+        <button class="tab-button active" id="tab-login" onclick="setMode('login')">Entrar</button>
+        <button class="tab-button" id="tab-signup" onclick="setMode('signup')">Cadastrar</button>
+      </div>
+
+      <div class="message" id="message"></div>
+
+      <div class="field" id="field-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="seu@exemplo.com" autocomplete="email">
+      </div>
+
+      <div class="field" id="field-username" style="display: none;">
+        <label for="username">Nome de usuário</label>
+        <input type="text" id="username" placeholder="Seu nome no app" autocomplete="username">
+      </div>
+
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="••••••••" autocomplete="current-password">
+      </div>
+
+      <div class="actions">
+        <button class="button-primary" id="action-button" onclick="handleAction()">Entrar</button>
+      </div>
+
+      <div class="footer">© 2026 AURA</div>
+    </section>
+  </main>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>
